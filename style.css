@@ -4,8 +4,11 @@
 }
 
 
-.body{
-    height: 100vh; /* Set the height of the map */
+
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 
@@ -28,7 +31,7 @@
 
 #counters_table{
     display: block;
-    max-height: 250px;
+    max-height: 42vh;
     overflow-y: auto;
     overflow-x: hidden;
 
