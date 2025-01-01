@@ -4,7 +4,7 @@ var objectsOnLayer = new L.LayerGroup();
 // html thingies
 const calendar = document.getElementById('calendar');
 const hourSelector = document.getElementById('hourSelector');
-const api = "http://plofski.pythonanywhere.com"
+const api = "https://plofski.pythonanywhere.com"
 
 traffic_arr = ['rustig','gemiddeld','druk']
 
