@@ -1,0 +1,43 @@
+#map {
+    height: 100%; /* Set the height of the map */
+    width: 100%; /* The width is set to 100% */
+}
+
+
+.body{
+    height: 100vh; /* Set the height of the map */
+}
+
+
+#route_div{
+    height: 80vh;
+
+
+}
+
+
+#map_viewer{
+    height: 90vh;
+}
+
+#route_engine {
+   
+    min-width: 220px; /* The width is set to 100% */
+    height: 100%;
+}
+
+#counters_table{
+    display: block;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border: 2px solid #c4c5c3;
+    border-radius: 10px;
+}
+
+
+tbody{
+    display: block;
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPX Route on Leaflet Map with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Drukteplanner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    </nav>
+
+</header>
+
+<body>
+
+
+    <div id="route_div" class="container-fluid">
+        <div class="row">
+            <div id="route_engine" class="col-md-3">
+                <h2>Drukteplanner voor fietsers</h2>
+                <!-- Add your route planner content here -->
+                <form class="d-block">
+
+                    <div class="form-group mx-sm-3 mb-2">
+                        <p><b>Disclaimer: voorspelde waarden kunnen verkeerd zijn!</b></p>
+                    </div>
+
+
+
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="calendar">Selecteer datum:</label>
+                        <input type="date" id="calendar" class="form-control" min="" max="">
+                    </div>
+
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="hourSelector">Selecteer uur:</label>
+                        <select id="hourSelector" class="form-control">
+
+                        </select>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <button class="btn btn-primary" type="button" id = 'updateBtn'>update predictions</button>
+                    </div>
+                </form>
+                
+
+                <div class="mx-sm-3 mb-2">
+                    <label for="gpxFile" class="custom-file-button">Upload hier je GPX bestand</label>
+                    <input type="file" id="gpxFile" accept=".gpx" />
+                    <!--<p>
+                        <b>drukte:</b> gemiddeld
+                    </p>-->
+
+                </div>
+
+
+                <div class="mx-sm-3 mb-2">
+
+                    <p>
+                        <b>Tellers</b>
+                    </p>
+                    <table id="counters_table" class="table table-striped">
+                        <tbody id="tbody_counters">
+
+
+                            <tr class="row">
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+            </div>
+
+            <div id="map_viewer" class="col-md-9">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+    <!-- Leaflet-GPX Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script>
+    <script src="https://unpkg.com/leaflet-geometryutil"></script>
+
+    <script src="./index.js">
+
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
