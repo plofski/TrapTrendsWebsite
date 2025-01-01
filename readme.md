@@ -1,7 +1,8 @@
-# TrapTrends API
+# TrapTrends API Website
 
 **TrapTrends** is an API that provides predictions for bike traffic on Flemish cycle highways. The system predicts how many cyclists will pass by a specific bike counter over the course of the next hour at various locations. Check out the API on **plofski.pythonanywhere.com** ! 
 
+This website is an dutch PoC for testing out the api in a real-time use case
 **DISCLAIMER: the predicted amount is an estimate and may deviate from the actual value. Use this information at your own discretion and responsibility.** 
 
 With **TrapTrends**, users can:
