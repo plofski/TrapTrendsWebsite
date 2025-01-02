@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     
 
     const oneWeekLater = new Date(today);
-    oneWeekLater.setDate(today.getDate() +6);
+    oneWeekLater.setDate(today.getDate() +5);
 
     calendar.min = today.toISOString().split('T')[0];
     calendar.max = oneWeekLater.toISOString().split('T')[0];
